@@ -11,9 +11,6 @@ from config import API_ID, API_HASH, BOT_TOKEN, BOT_USERNAME, OWNER_ID, GPT_API,
 
 
 loop = asyncio.get_event_loop()
-load_dotenv()
-boot = time.time()
-
 
 logging.basicConfig(
     format="[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s",
@@ -22,7 +19,7 @@ logging.basicConfig(
 
 
 
-EQUROBOT = Client(
+app = Client(
     ":EQUROBOT:",
     api_id=API_ID,
     api_hash=API_HASH,
@@ -31,10 +28,15 @@ EQUROBOT = Client(
 
 
 
-async def EQUROBOT_bot():
+
+
+
+
+
+async def info_bot():
     global BOT_ID, BOT_NAME, BOT_USERNAME
-    await EQUROBOT.start()
-    getme = await EQUROBOT.get_me()
+    await app.start()
+    getme = await app.get_me()
     BOT_ID = getme.id
     BOT_USERNAME = getme.username
     if getme.last_name:
@@ -43,4 +45,4 @@ async def EQUROBOT_bot():
         BOT_NAME = getme.first_name
 
 
-loop.run_until_complete(EQUROBOT_bot())
+loop.run_until_complete(info_bot())
