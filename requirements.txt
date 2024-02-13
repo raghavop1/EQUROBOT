@@ -1,0 +1,7 @@
+pyrogram==2.0.106
+requests==2.31.0
+lexica-api
+tgcrypto==1.2.5
+asyncio==3.4.3
+python-dotenv==1.0.0
+openai==0.28.0
