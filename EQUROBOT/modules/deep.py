@@ -11,7 +11,7 @@ api_key = config.DEEP_API
 async def deepchat(app: app, message):
     name = message.from_user.first_name
     try:
-        await zuli.send_chat_action(message.chat.id, ChatAction.TYPING)
+        await app.send_chat_action(message.chat.id, ChatAction.TYPING)
         if len(message.command) < 2:
             await message.reply_text(f"Hello {name}\nPlease provide text after the /deep command")
         else:
