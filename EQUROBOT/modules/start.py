@@ -5,9 +5,8 @@ from pyrogram.types import InlineKeyboardButton as ib
 import asyncio
 from EQUROBOT import app
 
-
 START_TEXT = """
-ʜɪ [user.mention],
+ʜɪ {message.from_user.mention},
 
 ɪ ᴀᴍ {app.username}, 
 ʏᴏᴜʀ ᴀɪ ᴄᴏᴍᴘᴀɴɪᴏɴ. 
