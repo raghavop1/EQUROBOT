@@ -24,7 +24,7 @@
       "required": true
     },
     "DEEP_API": {
-      "description": "Your DEEP API",
+      "description": "Your DEEP API https://deepai.org/",
       "required": true
     },
     "LOGGER_ID": {
@@ -36,7 +36,7 @@
       "required": true
     },
     "GPT_API": {
-      "description": "Your GPT API Key",
+      "description": "Your GPT API Key open ai",
       "required": true
     }
   },
