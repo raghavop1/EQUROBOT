@@ -11,3 +11,4 @@ aiofiles
 yt_dlp
 youtube_search
 pydub
+wget
