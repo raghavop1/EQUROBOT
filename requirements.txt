@@ -6,5 +6,5 @@ asyncio==3.4.3
 python-dotenv==1.0.0
 openai==0.28.0
 gtts
-aiohttp
+aiohttp== 3.9.3
 aiofiles
