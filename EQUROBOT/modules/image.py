@@ -50,7 +50,7 @@ async def upscale_image(client, message):
 
 
 # -----------------------------
-
+"""
 async def load_image(image: str, link: str):
     async with aiohttp.ClientSession() as session:
         async with session.get(link) as resp:
@@ -61,6 +61,16 @@ async def load_image(image: str, link: str):
                 return image
             return image
             
+"""
+async def load_image(image: str, link: str):
+    async with aiohttp.ClientSession() as session:
+        async with session.get(link) as resp:
+            if resp.status == 200:
+                async with aiofiles.open(image, mode="wb") as f:
+                    await f.write(await resp.read())
+                return image
+    return None
+    
 
 @app.on_message(filters.command("getdraw", prefixes="/"))
 async def upscale_image(client, message):
