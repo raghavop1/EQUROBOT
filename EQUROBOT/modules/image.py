@@ -1,10 +1,9 @@
 import base64
 import httpx
 import os
-from pyrogram import filters
 from config import BOT_USERNAME
 from EQUROBOT import app
-from pyrogram import filters
+from pyrogram import Client, filters
 import pyrogram
 from uuid import uuid4
 from pyrogram.types import InlineKeyboardButton,InlineKeyboardMarkup
