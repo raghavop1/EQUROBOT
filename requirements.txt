@@ -9,3 +9,5 @@ gtts
 aiohttp== 3.9.3
 aiofiles
 yt_dlp
+youtube_search
+pydub
