@@ -3,6 +3,7 @@ import asyncio
 import requests
 import wget
 import yt_dlp
+from youtubesearchpython import SearchVideos
 from youtube_search import YoutubeSearch
 from yt_dlp import YoutubeDL
 from pyrogram import filters
