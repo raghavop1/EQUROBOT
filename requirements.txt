@@ -9,6 +9,6 @@ gtts
 aiohttp== 3.9.3
 aiofiles
 yt_dlp
-youtube_search
+youtube-search-python==1.6.6
 pydub
 wget
