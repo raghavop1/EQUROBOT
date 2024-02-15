@@ -38,7 +38,7 @@ async def chat(app :app, message):
 # --------------------------------------------------------------------------------
 # --------------------------------------------------------------------------------
 
-@app.on_message(filters.command([" " , ],  prefixes=[" "," "]))
+@app.on_message(filters.command(["iri" , ],  prefixes=["s","S"]))
 async def chat(app :app, message):
     
     try:
@@ -95,7 +95,7 @@ async def deepchat(app: app, message):
     try:
         await app.send_chat_action(message.chat.id, ChatAction.TYPING)
         if len(message.command) < 2:
-            await message.reply_text(f"Hello {name}\nPlease provide text after the /deep command.")
+            await message.reply_text(f"Hello {name}\nHow can I assist you today?.")
         else:
             a = message.text.split(' ', 1)[1]
 
@@ -124,7 +124,7 @@ async def deepchat(app: app, message):
     try:
         await app.send_chat_action(message.chat.id, ChatAction.TYPING)
         if len(message.command) < 2:
-            await message.reply_text(f"Hello {name}\nPlease provide text after the /deep command.")
+            await message.reply_text(f"Hello {name}\n How can I assist you today?.")
         else:
             a = message.text.split(' ', 1)[1]
 
