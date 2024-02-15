@@ -13,4 +13,4 @@ youtube-search==2.1.2
 youtube-search-python==1.6.6
 pydub
 wget
-ffmpeg-python
+ffmpeg-python==0.2.0
