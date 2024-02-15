@@ -1,22 +1,13 @@
 import os
-import future
 import asyncio
 import requests
 import wget
-import time
 import yt_dlp
-from urllib.parse import urlparse
 from youtube_search import YoutubeSearch
 from yt_dlp import YoutubeDL
-
-from EQUROBOT import app
 from pyrogram import filters
-from pyrogram import Client, filters
-from pyrogram.types import Message
-from youtubesearchpython import VideosSearch
-from youtubesearchpython import SearchVideos
-import future
-
+from pyrogram.types import *
+from EQUROBOT import app
 
 #-------------------
 
