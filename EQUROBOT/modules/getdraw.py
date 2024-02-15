@@ -1,13 +1,9 @@
-import base64
 import httpx
 import os
 import config 
 from EQUROBOT import app
 from pyrogram import Client, filters
-
-
 import aiofiles, aiohttp, requests
-
 
 
 async def load_image(image: str, link: str):
@@ -22,7 +18,7 @@ async def load_image(image: str, link: str):
             
 
 @app.on_message(filters.command("getdraw", prefixes="/"))
-async def upscale_image(client, message):
+async def draw_image(client, message):
     chat_id = message.chat.id
     if message.sender_chat:
         user_id = message.sender_chat.id
@@ -30,7 +26,7 @@ async def upscale_image(client, message):
         user_id = message.from_user.id
     replied = message.reply_to_message
     if not config.DEEP_API:
-        return await message.reply_text("I can't draw !")
+        return await message.reply_text("I can't upscale !")
     if replied:
         if replied.text:
             query = replied.text
@@ -54,5 +50,4 @@ async def upscale_image(client, message):
     if not downloaded_image:
         return await aux.edit("Please try again ...")
     await aux.delete()
-    return await message.reply_document(downloaded_image)
-  
+    return await message.reply_photo(downloaded_image, caption=query)
