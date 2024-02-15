@@ -1,3 +1,5 @@
+import time
+from urllib.parse import urlparse
 import os
 import asyncio
 import requests
