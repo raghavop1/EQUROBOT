@@ -38,7 +38,7 @@ async def chat(app :app, message):
 # --------------------------------------------------------------------------------
 # --------------------------------------------------------------------------------
 
-@app.on_message(filters.command(["aan" , ],  prefixes=["j","J"]))
+@app.on_message(filters.command([" " , ],  prefixes=[" "," "]))
 async def chat(app :app, message):
     
     try:
@@ -118,7 +118,7 @@ async def deepchat(app: app, message):
 #--------------------------------------------------------------------------------
 #--------------------------------------------------------------------------------
 
-@app.on_message(filters.command(["aby" , ],  prefixes=["b","B"]))
+@app.on_message(filters.command(["qu" , ],  prefixes=["e","E"]))
 async def deepchat(app: app, message):
     name = message.from_user.first_name
     try:
