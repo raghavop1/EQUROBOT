@@ -8,3 +8,4 @@ openai==0.28.0
 gtts
 aiohttp== 3.9.3
 aiofiles
+yt_dlp
