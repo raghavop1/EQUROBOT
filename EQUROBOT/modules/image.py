@@ -28,7 +28,7 @@ async def image_loader(image: str, link: str):
 async def upscale_image(client, message):
     chat_id = message.chat.id
     replied = message.reply_to_message
-    if not config.DEEP_API_KEY:
+    if not config.DEEP_API:
         return await message.reply_text("I can't upscale !")
     if not replied:
         return await message.reply_text("Please Reply To An Image ...")
@@ -41,7 +41,7 @@ async def upscale_image(client, message):
         files={
             'image': open(image, 'rb'),
         },
-        headers={'api-key': config.DEEP_API_KEY}
+        headers={'api-key': config.DEEP_API}
     ).json()
     image_link = data["output_url"]
     downloaded_image = await image_loader(image, image_link)
