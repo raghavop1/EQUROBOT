@@ -23,7 +23,7 @@ async def image_loader(image: str, link: str):
             return image
             
 
-@bot.on_message(cdx(["upscale"]))
+@app.on_message(cdx(["upscale"]))
 async def upscale_image(client, message):
     chat_id = message.chat.id
     replied = message.reply_to_message
