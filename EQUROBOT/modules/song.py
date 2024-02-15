@@ -5,7 +5,7 @@ import yt_dlp
 from pyrogram import filters
 from youtube_search import YoutubeSearch
 
-from DAXXROBOT import SUPPORT_CHAT, pbot,BOT_NAME
+from EQUROBOT import SUPPORT_CHAT, pbot,BOT_NAME
 
 
 def time_to_seconds(time):
