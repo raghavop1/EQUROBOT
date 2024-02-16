@@ -10,7 +10,7 @@ from pyrogram.types import CallbackQuery, InlineKeyboardMarkup, InlineKeyboardBu
 
 
 vdo_link = {}
-
+"""
 keyboard = InlineKeyboardMarkup([
         [
             InlineKeyboardButton("⊝ ᴄʟᴏsᴇ ⊝", callback_data="close_data"), 
@@ -18,7 +18,7 @@ keyboard = InlineKeyboardMarkup([
         ]
 ])
 
-
+"""
 
 @app.on_callback_query(filters.regex("^close_data"))
 async def close_callback(_, query):
