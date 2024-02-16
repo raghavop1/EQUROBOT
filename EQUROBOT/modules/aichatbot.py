@@ -1,6 +1,6 @@
 import asyncio, requests
 
-from EQUROBOT Import app
+from EQUROBOT import app
 import config
 from pyrogram import filters
 from pyrogram.enums import ChatAction, MessageEntityType
