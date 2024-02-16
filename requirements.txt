@@ -15,4 +15,3 @@ pydub
 wget
 ffmpeg-python==0.2.0
 beautifulsoup4
-opencv-python
