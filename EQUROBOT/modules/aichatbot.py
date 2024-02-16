@@ -6,7 +6,8 @@ from pyrogram import filters
 from pyrogram.enums import ChatAction, MessageEntityType
 
 
-@app.on_message(group=30)
+
+@app.on_message(filters.text, group=30)
 async def ai_chat_bot(client, message):
     chat_id = message.chat.id
     if message.sender_chat:
