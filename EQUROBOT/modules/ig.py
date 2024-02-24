@@ -1,9 +1,10 @@
 from pyrogram import Client, filters
 import requests
 from EQUROBOT import app
+import config
 from config import *
 
-@app.on_message(filters.command("daxx"))
+@app.on_message(filters.command("og"))
 async def download_instagram_reel(client, message):
     try:
         if len(message.text.split(" ")) == 1:
@@ -23,4 +24,4 @@ async def download_instagram_reel(client, message):
         else:
             await message.reply_text(f"Request failed with status code: {response.status_code}")
     except Exception as e:
-        await message.reply_text("Something went wrong, please try again later.")
+        await message.reply_text(f"Something went wrong: {e}")
