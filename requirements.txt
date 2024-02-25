@@ -16,4 +16,6 @@ wget
 ffmpeg-python==0.2.0
 beautifulsoup4
 SafoneAPI
-whois
+pillow
+future
+python-whois
