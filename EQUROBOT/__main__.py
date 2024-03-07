@@ -3,8 +3,10 @@ import importlib
 from pyrogram import idle
 from EQUROBOT import app
 from EQUROBOT.modules import ALL_MODULES
+import config
+from config import LOGGER_ID
 
-LOGGER_ID = -1001919135283
+LOGGER_ID = config.LOGGER_ID
 
 loop = asyncio.get_event_loop()
 
