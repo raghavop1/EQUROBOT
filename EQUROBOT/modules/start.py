@@ -26,7 +26,7 @@ async def start(client, message):
             InlineKeyboardButton("⦿ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ⦿", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
         ],
         [
-            InlineKeyboardButton("⦿ɢʀᴏᴜᴘ⦿", url=f"https://t.me/ALLTYPECC"),
+            InlineKeyboardButton("⦿ɢʀᴏᴜᴘ⦿", url=f"https://t.me/raghavsupport"),
             InlineKeyboardButton("⦿ᴏᴡɴᴇʀ⦿", user_id=OWNER_ID)
         ]
     ]
@@ -34,7 +34,7 @@ async def start(client, message):
     reply_markup = InlineKeyboardMarkup(buttons)
 
     await message.reply_video(
-        video="https://telegra.ph/file/365de71e032aadb98e1d2.mp4",
+        video="https://telegra.ph/file/2f6dbbf502e3b37ead17a.mp4",
         caption=START_TEXT,
         reply_markup=reply_markup
     )
