@@ -38,7 +38,7 @@ async def chat(app :app, message):
 # --------------------------------------------------------------------------------
 # --------------------------------------------------------------------------------
 
-@app.on_message(filters.command(["iri" , ],  prefixes=["s","S"]))
+@app.on_message(filters.command(["enox" , ],  prefixes=["k","K"]))
 async def chat(app :app, message):
     
     try:
